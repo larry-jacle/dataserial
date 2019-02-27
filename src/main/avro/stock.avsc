@@ -3,10 +3,10 @@
   "type":"record",
   "name":"StockAvroBean",
   "fields":[
-    {"name":"stockCode","type":"string"},
+    {"name":"stockCode","type":["string","null"]},
     {"name":"stockName","type":"string"},
     {"name":"tradeTime","type":"long"},
-    {"name":"preclosePrice","type":"float"},
+    {"name":"preclosePrice","type":["float","null"]},
     {"name":"openPrice","type":"float"},
     {"name":"currentPrice","type":"float"}
   ]
